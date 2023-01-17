@@ -16,7 +16,6 @@
 
 **cd..** : Move up to the parent directory
 
-**cd../..** : Move up two levels
 
 ## 2. List Directory Contents
 
@@ -36,26 +35,36 @@
 
 **ls -l** / : List of the file system from root with symbolic links
 
-## 3. Shortcuts
+## 3. File and Directory Management
+**rm <file>** : Delete a file (This deletes the file permanently; use with caution.)
 
-**Tab** : Auto-complete file and folder names
+**touch <file>** : Create a new file without any extension
 
-**Ctrl + A** : Go to the beginning of the line you're currently typing on
 
-**Ctrl + E** : Go to the end of the line you're currently typing on
 
-**Ctrl + U** : Clear the line before the cursor
+# Github commands
+## 1. STAGE & SNAPSHOT
+*Working with snapshots and the Git staging area*
 
-**Ctrl + K** : Clear the line after the cursor
+**git status** : Show modified files in working directory, staged for your next commit
 
-**Ctrl + W** : Delete the word before the cursor
+**git add [file]** : 
+add a file as it looks now to your next commit (stage)
 
-**Ctrl + T**: Swap the last two characters before the cursor
+**git commit -m “[descriptive message]”** : 
+commit your staged content as a new commit snapshot
 
-**Esc + T** : Swap the last two words before the cursor
+## 2. SETUP & INIT
+*Configuring user information, initializing and cloning repositories*
 
-**Ctrl + L** : Clear the screen
+**git init** : 
+initialize an existing directory as a Git repository
 
-**Ctrl + C** : Kill whatever you're running
+**git clone [url]** :
+retrieve an entire repository from a hosted location via URL
 
-**Ctrl + D** : Exit the current shell
+
+## 3. INSPECT & COMPARE
+*Examining logs, diffs and object information*
+
+**git log** : show the commit history for the currently active branch
